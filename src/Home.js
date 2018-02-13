@@ -11,7 +11,7 @@ class Home extends Component {
                     <div className='ImageContainer'>
                         <img src={'/angrycomputer.jpg'} className='Image' alt='Frustrated Guy'/>
                     </div>
-                    <div className='TextWrap'>
+                    <div className='TextWrap AboutText'>
                         <h3>Do You Just Want A Great Website Without All The Hassle?</h3>
                         <p>We handle everything for you, no experience needed. Our professional designer will work with you one on one to build you the perfect website to advertise your small business.</p>
                         <p><b>No hassles.</b></p>
@@ -46,7 +46,7 @@ class Home extends Component {
                         <CTAButton width='80px' height='50px' text="Do Not Wait" fsize='medium'/>
                     </div>
                 </div>
-                <h3 className='HowHeader'>How Can We Charge So Much Less Than The Other Guys?</h3>
+                <h3 className='HowHeader TextWrap'>How Can We Charge So Much Less Than The Other Guys?</h3>
                 <div className='HomeContainer AlignItems'>
                     <div className='TextWrap HowBlock'>
                         <p>It is easy. We know what we are doing. The other guys just build on top of Wordpress.</p>
@@ -57,8 +57,8 @@ class Home extends Component {
                         <p>Building from scratch takes a lot of extra and unnecessary time as well. So why do that, when we can simply re-combine our existing components into something new and beautiful for you instead.</p>
                         <p>All these things combine to mean that we do not have to charge you upwards of $5000 for a simple business website.</p>
                         <p>It also means no surprise bills for lisence renewals for the premium Wordpress Theme you <b>did not</b> know you were using.</p>
+                        <CTAButton width='80px' height='50px' text="Order Now" fsize='medium'/>
                     </div>
-                    <CTAButton width='80px' height='50px' text="Order Now" fsize='medium'/>
                 </div>
             </div>
         );

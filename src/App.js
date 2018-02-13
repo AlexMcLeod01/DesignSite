@@ -12,20 +12,20 @@ class App extends Component {
     return (
       <Router>
         <div className='App'>
-        <NavBar/>
-        <div className='App2'>
-            <Header/>
-            <div className='FooterGoesDown'>
-                <div className='Container'>
-                    <Switch>
-                        <Route exact={true} path='/' component={Home} />
-                        <Route path='/Contact' component={Contact} />
-                        <Route path='/About' component={Home} />
-                    </Switch>
+            <NavBar/>
+            <div className='App2'>
+                <Header/>
+                <div className='FooterGoesDown'>
+                    <div className='Container'>
+                        <Switch>
+                            <Route exact={true} path='/' component={Home} />
+                            <Route path='/Contact' component={Contact} />
+                            <Route path='/About' component={Home} />
+                        </Switch>
+                    </div>
                 </div>
+                <Footer/>
             </div>
-            <Footer/>
-        </div>
         </div>
       </Router>
     );
@@ -49,7 +49,7 @@ class NavBar extends Component {
 class Header extends Component {
     render() {
         return (
-            <header className='App-header'>
+            <header className='App-header Header-size'>
                 <h1 className='App-title'>Heart Lotus Web Design</h1>
                 <h3 className='App-subtitle'>Simple, Affordable, Effective</h3>
             </header>

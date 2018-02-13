@@ -1,4 +1,4 @@
-@media (min-width: 701px) {
+@media (min-width: 769px) {
     .HomeContainer {
         padding-top: 30px;
         color: #130a17;
@@ -10,8 +10,40 @@
     .Image {
         width: 100%
     }
+    
     .ImageContainer {
         width: 50vw;
+    }
+    
+    .AboutText {
+        width: 45vw;
+    }
+    
+    .BigPadding {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 768px) {
+    .HomeContainer {
+        padding-top: 20px;
+        color: #130a17;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .Image {
+        margin-top: 25px;
+        width: 100%;
+    }
+    
+    .ImageContainer {
+        width: 50vw;
+    }
+    
+    .AboutText {
+        width: 45vw;
     }
 }
 
@@ -28,9 +60,15 @@
     .Image {
         width: 100%;
     }
+    
     .ImageContainer {
-        width: 75vw;
+        width: 90vw;
     }
+    
+    .AboutText {
+        width: 90vw;
+    }
+    
 }
 
 .TextWrap {
@@ -50,9 +88,9 @@
 .HowHeader {
     background-image: linear-gradient(rgba(62,34,75,0.5), rgba(62,34,75,0.5)), url(./images/dollars.jpg);
     background-size: contain;
-    width: 100%;
+    min-width: 100vw;
+    width: 100vw;
     height: 200px;
-    padding: 20px;
     color: #fefeff;
     display: flex;
     flex-direction: row;
@@ -63,6 +101,6 @@
 .HowBlock {
     flex: 1;
     text-align: left;
-    padding-left: 10px;
-    width: 100%;
+    padding-left: 5vw;
+    width: 90vw;
 }
