@@ -1,7 +1,7 @@
 @media (min-width: 769px) {
     .HomeContainer {
         padding-top: 30px;
-        color: #130a17;
+        color: var(--main-text-color, #130a17);
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -27,7 +27,7 @@
 @media (min-width: 701px) and (max-width: 768px) {
     .HomeContainer {
         padding-top: 20px;
-        color: #130a17;
+        color: var(--main-text-color, #130a17);
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -50,7 +50,7 @@
 @media (max-width: 700px) {
     .HomeContainer {
         padding-top: 20px;
-        color: #130a17;
+        color: var(--main-text-color, #130a17);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -91,7 +91,7 @@
     min-width: 100vw;
     width: 100vw;
     height: 200px;
-    color: #fefeff;
+    color: var(--white, #fefeff);
     display: flex;
     flex-direction: row;
     align-items: center;

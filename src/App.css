@@ -20,10 +20,10 @@ html, body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    font-family: var(--main-text);
+    font-family: var(--main-text, 'Open Sans', sans-serif);
     text-align: center;
     line-height: 135%;
-    color: var(--main-text-color);
+    color: var(--main-text-color, #130a17);
 }
 
 /* Default stylings for the app */
@@ -42,7 +42,7 @@ html, body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg-color, #623475);
     width: 100vw;
     position: fixed;
     top: 0;
@@ -51,7 +51,7 @@ html, body {
         
 .Navbar-li {
     float: left;
-    border-right: 1px solid var(--main-color);
+    border-right: 1px solid var(--main-color, #9b59b6);
 }
 
 /* The size of the buttons changes on smaller screens */
@@ -59,7 +59,7 @@ html, body {
 @media (max-width: 700px) {
     li a {
         display: block;
-        color: var(--white);
+        color: var(--white, #fefeff);
         text-align: center;
         padding: 8px 12px;
         text-decoration: none;
@@ -67,7 +67,7 @@ html, body {
     }
     .Nav-button {
         display: block;
-        color: var(--white);
+        color: var(--white, #fefeff);
         text-align: center;
         cursor: pointer;
         font-size: x-small;
@@ -79,14 +79,14 @@ html, body {
 @media (min-width: 701px) {
     li a {
         display: block;
-        color: var(--white);
+        color: var(--white, #fefeff);
         text-align: center;
         padding: 28px 32px;
         text-decoration: none;
     }
     .Nav-button {
         display: block;
-        color: var(--white);
+        color: var(--white, #fefeff);
         text-align: center;
         cursor: pointer;
     }
@@ -97,15 +97,15 @@ html, body {
     and #a971c0 on active
 */
 li a:hover {
-    background-color: var(--main-color);
+    background-color: var(--main-color, #9b59b6);
 }
 
 .lihover:hover {
-    background-color: var(--main-color);
+    background-color: var(--main-color, #9b59b6);
 }
 
 .active {
-    background-color: var(--main-highlight-color);
+    background-color: var(--main-highlight-color, #a971c0);
 }
 /* End of Navbar section */
 
@@ -114,7 +114,7 @@ li a:hover {
     background-image: linear-gradient(rgba(62,34,75,0.5), rgba(62,34,75,0.5)), url(./images/monitorbg.jpg);
     background-size: cover;
     width: 100%;
-    color: var(--white);
+    color: var(--white, #fefeff);
 }
 
 @media (min-width: 701px) {
@@ -126,11 +126,11 @@ li a:hover {
     .App-title {
         font-size: 40px;
         margin-top: 150px;
-        font-family: var(--header-text);
+        font-family: var(--header-text, 'Open Sans', sans-serif);
     }
     
     .App-subtitle {
-        font-family: var(--header-text);
+        font-family: var(--header-text, 'Open Sans', sans-serif);
     }
     
     .FooterGoesDown {
@@ -142,13 +142,13 @@ li a:hover {
         width: 100%;
         padding-bottom: 30px;
         padding-top: 30px;
-        background-color: var(--white);
+        background-color: var(--white, #fefeff);
     }
     
     /* Footer styling */
     .App-footer {
-        background-color: var(--main-bg-color);
-        color: var(--white);
+        background-color: var(--main-bg-color, #623475);
+        color: var(--white, #fefeff);
         height: 7em;
         width: 100%;
         padding-top: 1em;
@@ -176,15 +176,15 @@ li a:hover {
         width: 100%;
         padding-bottom: 150px;
         padding-top: 30px;
-        background-color: var(--white);
+        background-color: var(--white, #fefeff);
     }
     
     /* Footer styling */
     .App-footer {
         flex: 0;
         font-size: small;
-        background-color: var(--main-bg-color);
-        color: var(--white);
+        background-color: var(--main-bg-color, #623475);
+        color: var(--white, #fefeff);
         width:90vw;
         padding: 20px 30px 20px 15px;
         position: absolute;
